@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | Ruby on Rails Project One</title> 
+  </head>
+  <body>
+    <h1>Project One</h1>
+    <p>
+      <b>La fecha y hora actual es: </b>
+      <%= Time.now.in_time_zone('Bogota').strftime("%d-%b-%Y  %I:%M %P") %>
+    </p>
+    <ul>
+      <li><%= link_to 'Basics', :action => :basics %></li>
+      <li><%= link_to 'Ruby', :action => :ruby %></li>
+      <li><%= link_to 'Git', :action => :git %></li>
+    </ul>
+  </body>
+</html>

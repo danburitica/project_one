@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/basics'
-  get 'pages/ruby'
-  get 'pages/git'
+  root 'pages#home'
+  get 'home' => 'pages#home'
+  get 'basics' => 'pages#basics'
+  get 'ruby' => 'pages#ruby'
+  get 'git' => 'pages#git'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
