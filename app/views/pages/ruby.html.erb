@@ -6,14 +6,26 @@
   <body>
     <h1>Ruby</h1>
     <ol>
-        <li>Interpolación de strings</li>
-        <li>Cómo se declara un array y cómo se adiciona un elemento al final del array</li>
-        <li>Cómo se itera un array utilizando el comando each</li>
-        <li>Cómo se declara un hash</li>
-        <li>Cómo se itera un hash utilizando el comando each</li>
-        <li>Que es un block en ruby? De un ejemplo de cómo utilizarlo</li>
-        <li>Cual es la convención en Ruby a la hora de nombrar variables?</li>
-        <li>Qué son attr_reader, attr_writer y attr_accesor? Para qué sirven?</li>
+        <b><li>Interpolación de strings</li></b>
+            <p>Permite insertar variables o instrucciones de Ruby dentro de una cadena: "Hola #{nombre}" la instrucción va dentro de llaves</p>
+        <b><li>Cómo se declara un array y cómo se adiciona un elemento al final del array</li></b>
+            <p>arreglo = ["elemento1", "elemento2", "elemento3"], para adicionar un elemento al final arreglo.push("elemento4")</p>
+        <b><li>Cómo se itera un array utilizando el comando each</li></b>
+            <p>Existen dos formas: La primera es<br>arreglo.each { |nElemento| puts nElemento } Las llaves definen un bloque y lo que está entre los pipelines (|) se llama variable de bloque, representa cada elemento del arreglo, en la iteración. Y lo que está después es la acción que se realizará con cada uno</p>
+            <p>La segunda se usa cuando se necesitan varias líneas y es<br>arreglo.each do |nElemento|<br>&nbsp&nbsp acción uno<br>&nbsp&nbsp acción dos<br>end</p>
+        <b><li>Cómo se declara un hash</li></b>
+            <p>hash = {"key" => "value", "otroKey" => "otroValue"}</p>
+        <b><li>Cómo se itera un hash utilizando el comando each</li></b>
+            <p>De manera similar a un array con each o each_pair<br>hash.each do |key, value|<br>&nbsp&nbsp acción uno<br>&nbsp&nbsp acción dos<br>end</p>
+            <p>También se pueden recorrer sólo las keys o sólo los values con each_key o each_value</p>
+        <b><li>Que es un block en ruby? De un ejemplo de cómo utilizarlo</li></b>
+            <p>Son un tipo de función que están dentro de la sentencia do - end o entre llaver { }</p>
+            <p>Ejemplos de blocks son los ciclos</p>
+        <b><li>Cual es la convención en Ruby a la hora de nombrar variables?</li></b>
+            <p>Se deben escribir en inglés, creo que es opcional, se usa snake_case para símbolos, métodos y variables</p>
+            <p>:un_simbolo<br>una_variable = "ruby"<br>def un_metodo<br>end</p>
+        <b><li>Qué son attr_reader, attr_writer y attr_accesor? Para qué sirven?</li></b>
+            <p>Son métodos que proporciona Ruby para compartir las variables o atributos de instancias. Es decir, cuando llamamos a un método de estos internamente crea funciones que nos permiten leer, actualizar o ambas, los atributos de una instancia. attr_reader :variable crea para sólo lectura, attr_writer :variable para sólo escritura y attr_accesor :variable para ambas acciones</p>
     </ol>
     <p>Volver a <%= link_to 'Home', :action => :home %> o visita <%= link_to 'Basics', :action => :basics %>, <%= link_to 'Git', :action => :git %></p>
   </body>
