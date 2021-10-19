@@ -6,16 +6,22 @@
   <body>
     <h1>Basics</h1>
     <ol>
-        <li>Qué es un resource en el contexto de una aplicación web REST en Ruby on Rails?</li>
-        <li>Qué puede hacerse con un resource?</li>
-        <li>Qué es RESTful routing?
+        <b><li>Qué es un resource en el contexto de una aplicación web REST en Ruby on Rails?</li></b>
+            <p>Un resource es el conjunto de un modelo de datos de un objeto y sus vistas, lo que nos permitirá crearlo, leerlo, actualizarlo y eliminarlo</p>
+        <b><li>Qué puede hacerse con un resource?</li></b>
+            <p>El resource nos permite manipular el objeto, como lo dije anteriormente, crearlo, leerlo, actualizarlo y eliminarlo</p>
+        <b><li>Qué es RESTful routing?</b>
+            <p>Es la forma que tenemos para acceder a cada una de las acciones mediante URLs</p>
             <ol type='a'>
-                <li>Cuantas acciones básicas tiene esta filosofía?</li>
-                <li>Cuales son?</li>
-                <li>Cuales verbos HTTP se utilizan en cada una de ellas?</li>
+                <b><li>Cuantas acciones básicas tiene esta filosofía?</li></b>
+                    <p>Tiene 4 acciones básicas</p>
+                <b><li>Cuales son?</li></b>
+                    <p>Crear, leer, actualizar y eliminar (CRUD)</p>
+                <b><li>Cuales verbos HTTP se utilizan en cada una de ellas?</li></b>
+                    <p>Crear (Post), leer (Get), actualizar (Patch o Put) y eliminar (Delete)</p>
             </ol>
         </li>
     </ol>
-    <%= link_to 'Home', :action => :home %>
+    <p>Volver a <%= link_to 'Home', :action => :home %> o visita <%= link_to 'Ruby', :action => :ruby %>, <%= link_to 'Git', :action => :git %></p>
   </body>
 </html>

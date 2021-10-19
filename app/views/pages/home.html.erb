@@ -6,9 +6,10 @@
   <body>
     <h1>Project One</h1>
     <p>
-      <b>La fecha y hora actual es: </b>
+      <b>La Fecha y Hora actual es: </b>
       <%= Time.now.in_time_zone('Bogota').strftime("%d-%b-%Y  %I:%M %P") %>
     </p>
+    <p>Visita las siguiente páginas:</p>
     <ul>
       <li><%= link_to 'Basics', :action => :basics %></li>
       <li><%= link_to 'Ruby', :action => :ruby %></li>
